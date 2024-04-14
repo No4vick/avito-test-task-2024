@@ -14,8 +14,7 @@
 * unittests
 
 ## Запуск
-Склонируйте проект
-Соберите docker-compose:
+Склонируйте проект и cоберите docker-compose:
 ```
     docker-compose up --build
 ```
