@@ -1,0 +1,21 @@
+version: "1.0"
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgresql://avito:hackme@db:5432/avito_api
+      WORKER_COUNT: 4
+
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: avito
+      POSTGRES_PASSWORD: hackme
+      POSTGRES_DB: avito_api
+    ports:
+      - "5432:5432"
