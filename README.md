@@ -16,23 +16,23 @@
 ## Запуск
 Склонируйте проект
 ```
-    git clone https://github.com/No4vick/avito-test-task-2024.git
+git clone https://github.com/No4vick/avito-test-task-2024.git
 ```
-Соберите docker-compose:
+Соберите образы docker:
 ```
-    docker-compose up --build
+docker-compose up --build
 ```
 Сервер будет запущен на порте 8000
 Также можно указать количество потоков в Dockerfile
 ```
-    WORKER_COUNT = 4 # Или другое целое значение больше 0
+WORKER_COUNT = 4 # Или другое целое значение больше 0
 ```
 Можно просмотреть Swagger по эндпоинту `/docs`
 
 ## Тестирование
 Установите зависимости:
 ```
-    pip install requirements-test.txt
+pip install requirements-test.txt
 ```
 
 ## Заметки
